@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+#include <locale.h> //Para colocar os acentos nas palavras
+
+int main() {
+	setlocale(LC_ALL, "portuguese"); //Irei fazer isso para configurar em português
+    while (true) {
+        //Declaração de variáveis
+        float total = 0.0f;
+        float valor;
+        float dinheiro;
+        //Nome do Supermercado
+       cout << "**********************"<<endl;
+
+       cout << "*Supermercado Eclipse*"<<endl;
+
+       cout << "**********************"<<endl;
+        // Loop 
+        while (true) {
+            cout << "Diga o Valor do Produto (Se quiser finalizar a compra digite 0): R$";
+            cin >> valor;
+            
+            if (valor == 0.0f) {
+                break;
+            }
+            
+            total += valor;
+        }
+        
+        //Total Compra
+        cout << "Total da compra: R$" << total << endl;
+        
+        //Dinheiro
+        cout << "Dinheiro: R$";
+        cin >> dinheiro;
+        
+        //Troco
+        float troco = dinheiro - total;
+        cout << "Troco: R$" << troco << endl << endl;
+        
+        if (dinheiro < total) {
+            cout << "Valor inválido." << endl << endl;
+        } 
+            
+            if (troco > 0.0f) {
+                cout << "Obrigado por comprar em nosso estabelecimento!" << endl << endl;
+            }
+
+    }
+    
+    return 0;
+}
