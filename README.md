@@ -1,4 +1,4 @@
-## Projeto feito na faculdade Estácio de Sá em uma disciplina de Java.
+## Projeto feito na faculdade Estácio de Sá em uma disciplina de C++.
 
 Esse projeto foi o primeiro projeto que eu fiz, ele se trata da linguagem C++(Uma das minhas linguagens favoritas).
 
